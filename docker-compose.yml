@@ -1,48 +1,39 @@
-version: '3.8'
 
 services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  php:
+    image: php:8.1-fpm
+    container_name: ci4_php_fpm
     volumes:
-      - ./Service:/var/www/html
-      - ./Service/writable:/var/www/html/writable   # Writable folder inside Service
+      - ./Service:/var/www/html:z  # Bind mount your CI4 code to the container
     networks:
-      - app-network
-    depends_on:
-      - db
+      - ci4_network
     environment:
-      - ./Service/.env  # Ensure the .env file is loaded here
-    restart: always  # Ensures that the container restarts in case of failure
-
-  nginx:
-    image: nginx:latest
-    volumes:
-      - ./public:/var/www/html/public
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_DATABASE=${DB_DATABASE}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+    expose:
+      - "8080"
     ports:
-      - "8080:80"
-    depends_on:
-      - app
-    networks:
-      - app-network
-
+      - "8080:8080"
+    command: >
+      bash -c "apt-get update && apt-get install -y libicu-dev && apt-get install -y libpq-dev && docker-php-ext-install intl && docker-php-ext-install pgsql && php spark serve --host 0.0.0.0 --port 8080"
   db:
-    image: postgres:latest
+    image: postgres:13
+    container_name: ci4_postgres
     environment:
-      POSTGRES_USER: ci4user
-      POSTGRES_PASSWORD: ci4password
-      POSTGRES_DB: ci4database
+      POSTGRES_USER: ${DB_USERNAME}     # Use the DB_USERNAME from .env
+      POSTGRES_PASSWORD: ${DB_PASSWORD} # Use the DB_PASSWORD from .env
+      POSTGRES_DB: ${DB_DATABASE}       # Use the DB_DATABASE from .env
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
     networks:
-      - app-network
-    restart: always  # Ensures that the container restarts in case of failure
-
+      - ci4_network
+    
 volumes:
-  pgdata:
+  postgres_data:
 
 networks:
-  app-network:
+  ci4_network:
     driver: bridge

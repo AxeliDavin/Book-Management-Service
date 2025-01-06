@@ -2449,3 +2449,833 @@ WARNING - 2025-01-06 13:34:37 --> [DEPRECATED] Passing lowercase HTTP method "po
  8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 DEBUG - 2025-01-06 13:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 14:17:52 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-06 14:17:52 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-06 14:17:52 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-06 14:17:52 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-06 14:17:54 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;available&quot; is of type boolean but expression is of type integer
+LINE 1: ...le&quot; = 'asdasd', &quot;author&quot; = 'sdasd', &quot;available&quot; = 1, &quot;update...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression. in /var/www/html/system/Database/Postgre/Connection.php:205
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 205)
+#1 /var/www/html/system/Database/Postgre/Connection.php(205): pg_query(Object(PgSql\Connection), 'UPDATE "books" ...')
+#2 /var/www/html/system/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "books" ...')
+#3 /var/www/html/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "books" ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE "books" ...', Array, false)
+#5 /var/www/html/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#6 /var/www/html/system/BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#7 /var/www/html/system/Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#8 /var/www/html/app/Controllers/BooksController.php(100): CodeIgniter\Model->update('1', Array)
+#9 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->toggleAvailability('1')
+#10 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#11 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+ERROR - 2025-01-06 14:17:54 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;available&quot; is of type boolean but expression is of type integer
+LINE 1: ...le&quot; = 'asdasd', &quot;author&quot; = 'sdasd', &quot;available&quot; = 1, &quot;update...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression. in /var/www/html/system/Database/Postgre/Connection.php:205
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 205)
+#1 /var/www/html/system/Database/Postgre/Connection.php(205): pg_query(Object(PgSql\Connection), 'UPDATE "books" ...')
+#2 /var/www/html/system/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "books" ...')
+#3 /var/www/html/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "books" ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE "books" ...', Array, false)
+#5 /var/www/html/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#6 /var/www/html/system/BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#7 /var/www/html/system/Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#8 /var/www/html/app/Controllers/BooksController.php(100): CodeIgniter\Model->update('1', Array)
+#9 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->toggleAvailability('1')
+#10 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#11 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-01-06 14:17:54 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;available&quot; is of type boolean but expression is of type integer
+LINE 1: ...le&quot; = 'asdasd', &quot;author&quot; = 'sdasd', &quot;available&quot; = 1, &quot;update...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+[Method: GET, Route: books/toggleAvailability/1]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE "books" SET "title" = :title:, "author" = :author:, "available" = :available:, "updated_at" = :updated_at:
+WHERE "books"."id" IN :books.id:', [...], false)
+ 2 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH/Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH/Controllers/BooksController.php(100): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->toggleAvailability('1')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-06 14:17:54 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;available&quot; is of type boolean but expression is of type integer
+LINE 1: ...le&quot; = 'asdasd', &quot;author&quot; = 'sdasd', &quot;available&quot; = 1, &quot;update...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+[Method: GET, Route: books/toggleAvailability/1]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE "books" SET "title" = :title:, "author" = :author:, "available" = :available:, "updated_at" = :updated_at:
+WHERE "books"."id" IN :books.id:', [...], false)
+ 2 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH/Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH/Controllers/BooksController.php(100): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->toggleAvailability('1')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-06 14:17:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;available&quot; is of type boolean but expression is of type integer
+LINE 1: ...le&quot; = 'asdasd', &quot;author&quot; = 'sdasd', &quot;available&quot; = 1, &quot;update...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 210.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "books" SET "title" = \'asdasd\', "author" = \'sdasd\', "available" = 1, "updated_at" = \'2025-01-06 14:17:54\'
+WHERE "books"."id" IN (\'1\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "books" SET "title" = \'asdasd\', "author" = \'sdasd\', "available" = 1, "updated_at" = \'2025-01-06 14:17:54\'
+WHERE "books"."id" IN (\'1\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE "books" SET "title" = :title:, "author" = :author:, "available" = :available:, "updated_at" = :updated_at:
+WHERE "books"."id" IN :books.id:', [...], false)
+ 4 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH/Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH/Controllers/BooksController.php(100): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->toggleAvailability('1')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-06 14:17:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;available&quot; is of type boolean but expression is of type integer
+LINE 1: ...le&quot; = 'asdasd', &quot;author&quot; = 'sdasd', &quot;available&quot; = 1, &quot;update...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 210.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "books" SET "title" = \'asdasd\', "author" = \'sdasd\', "available" = 1, "updated_at" = \'2025-01-06 14:17:54\'
+WHERE "books"."id" IN (\'1\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "books" SET "title" = \'asdasd\', "author" = \'sdasd\', "available" = 1, "updated_at" = \'2025-01-06 14:17:54\'
+WHERE "books"."id" IN (\'1\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE "books" SET "title" = :title:, "author" = :author:, "available" = :available:, "updated_at" = :updated_at:
+WHERE "books"."id" IN :books.id:', [...], false)
+ 4 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH/Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH/Controllers/BooksController.php(100): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->toggleAvailability('1')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-06 14:17:54 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;available&quot; is of type boolean but expression is of type integer
+LINE 1: ...le&quot; = 'asdasd', &quot;author&quot; = 'sdasd', &quot;available&quot; = 1, &quot;update...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 205.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;available&quot; is of type boolean but expression is of type integer
+LINE 1: ...le&quot; = \'asdasd\', &quot;author&quot; = \'sdasd\', &quot;available&quot; = 1, &quot;update...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.', '/var/www/html/system/Database/Postgre/Connection.php', 205)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(205): pg_query(Object(PgSql\Connection), 'UPDATE "books" SET "title" = \'asdasd\', "author" = \'sdasd\', "available" = 1, "updated_at" = \'2025-01-06 14:17:54\'
+WHERE "books"."id" IN (\'1\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "books" SET "title" = \'asdasd\', "author" = \'sdasd\', "available" = 1, "updated_at" = \'2025-01-06 14:17:54\'
+WHERE "books"."id" IN (\'1\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "books" SET "title" = \'asdasd\', "author" = \'sdasd\', "available" = 1, "updated_at" = \'2025-01-06 14:17:54\'
+WHERE "books"."id" IN (\'1\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE "books" SET "title" = :title:, "author" = :author:, "available" = :available:, "updated_at" = :updated_at:
+WHERE "books"."id" IN :books.id:', [...], false)
+ 6 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH/BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 8 SYSTEMPATH/Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 9 APPPATH/Controllers/BooksController.php(100): CodeIgniter\Model->update('1', [...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->toggleAvailability('1')
+11 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+12 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-06 14:17:54 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;available&quot; is of type boolean but expression is of type integer
+LINE 1: ...le&quot; = 'asdasd', &quot;author&quot; = 'sdasd', &quot;available&quot; = 1, &quot;update...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 205.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;available&quot; is of type boolean but expression is of type integer
+LINE 1: ...le&quot; = \'asdasd\', &quot;author&quot; = \'sdasd\', &quot;available&quot; = 1, &quot;update...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.', '/var/www/html/system/Database/Postgre/Connection.php', 205)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(205): pg_query(Object(PgSql\Connection), 'UPDATE "books" SET "title" = \'asdasd\', "author" = \'sdasd\', "available" = 1, "updated_at" = \'2025-01-06 14:17:54\'
+WHERE "books"."id" IN (\'1\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "books" SET "title" = \'asdasd\', "author" = \'sdasd\', "available" = 1, "updated_at" = \'2025-01-06 14:17:54\'
+WHERE "books"."id" IN (\'1\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "books" SET "title" = \'asdasd\', "author" = \'sdasd\', "available" = 1, "updated_at" = \'2025-01-06 14:17:54\'
+WHERE "books"."id" IN (\'1\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE "books" SET "title" = :title:, "author" = :author:, "available" = :available:, "updated_at" = :updated_at:
+WHERE "books"."id" IN :books.id:', [...], false)
+ 6 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH/BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 8 SYSTEMPATH/Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 9 APPPATH/Controllers/BooksController.php(100): CodeIgniter\Model->update('1', [...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->toggleAvailability('1')
+11 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+12 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-06 14:17:54 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-06 14:17:54 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-06 14:23:21 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-06 14:23:21 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-06 14:23:25 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Name or service not known in /var/www/html/system/Database/Postgre/Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 77)
+#1 /var/www/html/system/Database/Postgre/Connection.php(77): pg_connect('host=db port=54...')
+#2 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/system/BaseModel.php(609): CodeIgniter\Model->doFind(true, '1')
+#7 /var/www/html/app/Controllers/BooksController.php(60): CodeIgniter\BaseModel->find('1')
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->update('1')
+#9 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#10 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-01-06 14:23:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Name or service not known
+[Method: POST, Route: books/update/1]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "books"
+WHERE "books"."id" = :books.id:', [...], false)
+ 3 SYSTEMPATH/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(609): CodeIgniter\Model->doFind(true, '1')
+ 5 APPPATH/Controllers/BooksController.php(60): CodeIgniter\BaseModel->find('1')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->update('1')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-06 14:32:44 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-06 14:32:44 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-06 14:32:48 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Name or service not known in /var/www/html/system/Database/Postgre/Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 77)
+#1 /var/www/html/system/Database/Postgre/Connection.php(77): pg_connect('host=db port=54...')
+#2 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/system/BaseModel.php(609): CodeIgniter\Model->doFind(true, '1')
+#7 /var/www/html/app/Controllers/BooksController.php(60): CodeIgniter\BaseModel->find('1')
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->update('1')
+#9 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#10 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-01-06 14:32:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Name or service not known
+[Method: GET, Route: books/update/1]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "books"
+WHERE "books"."id" = :books.id:', [...], false)
+ 3 SYSTEMPATH/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(609): CodeIgniter\Model->doFind(true, '1')
+ 5 APPPATH/Controllers/BooksController.php(60): CodeIgniter\BaseModel->find('1')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->update('1')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-06 14:33:25 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-06 14:33:25 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-06 14:33:29 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Name or service not known in /var/www/html/system/Database/Postgre/Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 77)
+#1 /var/www/html/system/Database/Postgre/Connection.php(77): pg_connect('host=db port=54...')
+#2 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/system/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#7 /var/www/html/app/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->index()
+#9 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#10 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-01-06 14:33:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Name or service not known
+[Method: GET, Route: books]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "books"', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-06 14:34:37 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-06 14:34:37 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-06 14:34:42 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Name or service not known in /var/www/html/system/Database/Postgre/Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 77)
+#1 /var/www/html/system/Database/Postgre/Connection.php(77): pg_connect('host=db port=54...')
+#2 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/system/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#7 /var/www/html/app/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->index()
+#9 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#10 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-01-06 14:34:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Name or service not known
+[Method: GET, Route: books]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "books"', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-06 14:42:44 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1029.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1029): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/Boot.php(360): CodeIgniter\CLI\Console->run()
+ 6 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 7 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+WARNING - 2025-01-06 14:42:44 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1029.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1029): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/Boot.php(360): CodeIgniter\CLI\Console->run()
+ 6 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 7 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+WARNING - 2025-01-06 14:43:27 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1029.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1029): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+WARNING - 2025-01-06 14:43:27 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1029.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1029): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+ERROR - 2025-01-06 14:43:27 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /var/www/html/system/Database/Postgre/Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 77)
+#1 /var/www/html/system/Database/Postgre/Connection.php(77): pg_connect('host=localhost ...')
+#2 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/system/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#7 /var/www/html/app/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->index()
+#9 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#10 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /var/www/html/system/rewrite.php(44): require_once('/var/www/html/p...')
+#15 {main}
+CRITICAL - 2025-01-06 14:43:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[Method: GET, Route: books]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "books"', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+WARNING - 2025-01-06 14:43:29 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1029.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1029): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+WARNING - 2025-01-06 14:43:29 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1029.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1029): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+ERROR - 2025-01-06 14:43:29 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /var/www/html/system/Database/Postgre/Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 77)
+#1 /var/www/html/system/Database/Postgre/Connection.php(77): pg_connect('host=localhost ...')
+#2 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/system/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#7 /var/www/html/app/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->index()
+#9 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#10 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /var/www/html/system/rewrite.php(44): require_once('/var/www/html/p...')
+#15 {main}
+CRITICAL - 2025-01-06 14:43:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[Method: GET, Route: books]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "books"', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+WARNING - 2025-01-06 14:43:34 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1029.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1029): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+WARNING - 2025-01-06 14:43:34 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1029.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1029): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+ERROR - 2025-01-06 14:43:34 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /var/www/html/system/Database/Postgre/Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 77)
+#1 /var/www/html/system/Database/Postgre/Connection.php(77): pg_connect('host=localhost ...')
+#2 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/system/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#7 /var/www/html/app/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->index()
+#9 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#10 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /var/www/html/system/rewrite.php(44): require_once('/var/www/html/p...')
+#15 {main}
+CRITICAL - 2025-01-06 14:43:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[Method: GET, Route: books]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "books"', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+WARNING - 2025-01-06 14:43:36 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1029.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1029): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+WARNING - 2025-01-06 14:43:36 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1029.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1029): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+ERROR - 2025-01-06 14:43:36 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /var/www/html/system/Database/Postgre/Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 77)
+#1 /var/www/html/system/Database/Postgre/Connection.php(77): pg_connect('host=localhost ...')
+#2 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/system/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#7 /var/www/html/app/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->index()
+#9 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#10 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /var/www/html/system/rewrite.php(44): require_once('/var/www/html/p...')
+#15 {main}
+CRITICAL - 2025-01-06 14:43:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[Method: GET, Route: books]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "books"', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+WARNING - 2025-01-06 14:43:51 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1029.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1029): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+WARNING - 2025-01-06 14:43:51 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1029.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1029): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+ERROR - 2025-01-06 14:43:51 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /var/www/html/system/Database/Postgre/Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 77)
+#1 /var/www/html/system/Database/Postgre/Connection.php(77): pg_connect('host=localhost ...')
+#2 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/system/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#7 /var/www/html/app/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->index()
+#9 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#10 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /var/www/html/system/rewrite.php(44): require_once('/var/www/html/p...')
+#15 {main}
+CRITICAL - 2025-01-06 14:43:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[Method: GET, Route: books]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "books"', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+WARNING - 2025-01-06 14:47:29 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1029.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1029): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/Boot.php(360): CodeIgniter\CLI\Console->run()
+ 6 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 7 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+WARNING - 2025-01-06 14:47:29 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1029.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1029): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'books/update/(:num)', 'BooksController::update/$1')
+ 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/var/www/html/app/Config/Routes.php')
+ 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH/Boot.php(360): CodeIgniter\CLI\Console->run()
+ 6 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 7 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2025-01-06 14:53:55 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;db&quot; (172.19.0.2), port 5432 failed: FATAL:  password authentication failed for user &quot;root&quot; in /var/www/html/system/Database/Postgre/Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 77)
+#1 /var/www/html/system/Database/Postgre/Connection.php(77): pg_connect('host=db port=54...')
+#2 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/system/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#7 /var/www/html/app/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->index()
+#9 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#10 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /var/www/html/system/rewrite.php(44): require_once('/var/www/html/p...')
+#15 {main}
+CRITICAL - 2025-01-06 14:53:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;db&quot; (172.19.0.2), port 5432 failed: FATAL:  password authentication failed for user &quot;root&quot;
+[Method: GET, Route: books]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "books"', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/BooksController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
