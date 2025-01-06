@@ -26,22 +26,21 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => 'localhost',
-        'username'     => '',
-        'password'     => '',
-        'database'     => '',
-        'DBDriver'     => 'MySQLi',
+        'hostname'     => 'db',
+        'username'     => 'ci4user',
+        'password'     => 'ci4password',
+        'database'     => 'ci4database',
         'DBPrefix'     => '',
         'pConnect'     => false,
         'DBDebug'      => true,
-        'charset'      => 'utf8mb4',
-        'DBCollat'     => 'utf8mb4_general_ci',
+        'charset'      => 'UTF8',
+        'DBCollat'     => 'UTF8_GENERAL_CI',
         'swapPre'      => '',
         'encrypt'      => false,
         'compress'     => false,
         'strictOn'     => false,
         'failover'     => [],
-        'port'         => 3306,
+        'port'         => 5432,
         'numberNative' => false,
         'dateFormat'   => [
             'date'     => 'Y-m-d',
@@ -49,6 +48,7 @@ class Database extends Config
             'time'     => 'H:i:s',
         ],
     ];
+
 
     //    /**
     //     * Sample database connection for SQLite3.
@@ -197,5 +197,11 @@ class Database extends Config
         if (ENVIRONMENT === 'testing') {
             $this->defaultGroup = 'tests';
         }
+        $this->default['hostname'] = getenv('DB_HOST') ?: $this->default['hostname'];
+        $this->default['username'] = getenv('DB_USER') ?: $this->default['username'];
+        $this->default['password'] = getenv('DB_PASSWORD') ?: $this->default['password'];
+        $this->default['database'] = getenv('DB_NAME') ?: $this->default['database'];
+        $this->default['DBDriver'] = getenv('DB_DRIVER') ?: $this->default['DBDriver'];
+        $this->default['port'] = getenv('DB_PORT') ?: $this->default['port'];
     }
 }
