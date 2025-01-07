@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books</title>
+    <title>Books List</title>
 </head>
 <body>
 
 <h1>Books List</h1>
 
-<!-- Displaying any messages like errors or success -->
+<!-- Displaying success or error messages -->
 <?php if (session()->getFlashdata('error')): ?>
     <p style="color: red;"><?php echo session()->getFlashdata('error'); ?></p>
 <?php endif; ?>
@@ -18,12 +18,15 @@
 <?php endif; ?>
 
 <!-- Table to display books -->
-<table border="1">
+<table border="1" cellpadding="5" cellspacing="0">
     <thead>
         <tr>
             <th>Title</th>
             <th>Author</th>
-            <th>Available</th>
+            <th>Genre</th>
+            <th>ISBN</th>
+            <th>Published Date</th>
+            <th>Availability Status</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -32,18 +35,28 @@
             <tr>
                 <td><?= esc($book['title']) ?></td>
                 <td><?= esc($book['author']) ?></td>
-                <td><?= $book['available'] == 1 ? 'Available' : 'Not Available' ?></td>
+                <td><?= esc($book['genre']) ?></td>
+                <td><?= esc($book['isbn']) ?></td>
+                <td><?= esc($book['published_date']) ?></td>
+                <td><?= esc($book['availability_status']) ?></td>
                 <td>
-                    <a href="<?= site_url('books/show/' . $book['id']) ?>">View</a> |
-                    <a href="<?= site_url('books/update/' . $book['id']) ?>">Edit</a> |
-                    <form action="<?= site_url('books/delete/' . $book['id']) ?>" method="post" style="display:inline;">
-                        <?= csrf_field() ?>
-                        <input type="hidden" name="_method" value="DELETE">
-                        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this book?');">Delete</button>
-                    </form> |
-                    <a href="<?= site_url('books/toggleAvailability/' . $book['id']) ?>" class="btn btn-warning">
-                        <?= $book['available'] == 1 ? 'Mark as Not Available' : 'Mark as Available' ?>
-                    </a>
+                <!-- View Button -->
+                <a href="<?= site_url('books/show/' . $book['id']) ?>">View</a>
+
+                <!-- Edit Button -->
+                <a href="<?= site_url('books/update/' . $book['id']) ?>">Edit</a>
+
+                <!-- Delete Form -->
+                <form action="<?= site_url('books/delete/' . $book['id']) ?>" method="post" style="display:inline;">
+                    <?= csrf_field() ?>
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this book?');">Delete</button>
+                </form>
+
+                <!-- Toggle Availability Button -->
+                <a href="<?= site_url('books/toggleAvailability/' . $book['id']) ?>" class="btn btn-warning">
+                    <?= $book['availability_status'] == 'Available' ? 'Mark as Borrowed' : 'Mark as Available' ?>
+                </a>    
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -60,10 +73,19 @@
     <label for="author">Author:</label>
     <input type="text" id="author" name="author" required><br><br>
 
-    <label for="available">Available:</label>
-    <select id="available" name="available">
-        <option value="1">Available</option>
-        <option value="0">Not Available</option>
+    <label for="genre">Genre:</label>
+    <input type="text" id="genre" name="genre" required><br><br>
+
+    <label for="isbn">ISBN:</label>
+    <input type="text" id="isbn" name="isbn" required><br><br>
+
+    <label for="published_date">Published Date:</label>
+    <input type="date" id="published_date" name="published_date" required><br><br>
+
+    <label for="availability_status">Availability Status:</label>
+    <select id="availability_status" name="availability_status" required>
+        <option value="Available">Available</option>
+        <option value="Borrowed">Borrowed</option>
     </select><br><br>
 
     <button type="submit">Add Book</button>

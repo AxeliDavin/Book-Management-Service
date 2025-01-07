@@ -22,13 +22,17 @@ class BooksController extends ResourceController
     public function create()
     {    
         // Get form data
-        $available = $this->request->getPost('available') == '1';  // Convert to boolean (true/false)
+        $available = $this->request->getPost('availability_status');
         
         // Proceed with insertion
         $data = [
-            'title'    => $this->request->getPost('title'),
-            'author'   => $this->request->getPost('author'),
-            'available'=> $available, // Use boolean value
+            'id'               => uniqid(), // Generate a unique ID (you can change this to use UUID if needed)
+            'title'            => $this->request->getPost('title'),
+            'author'           => $this->request->getPost('author'),
+            'genre'            => $this->request->getPost('genre'),
+            'isbn'             => $this->request->getPost('isbn'),
+            'published_date'   => $this->request->getPost('published_date'),
+            'availability_status'=> $available, // Use the enum value
         ];
     
         $model = new BookModel();
@@ -38,19 +42,6 @@ class BooksController extends ResourceController
         } else {
             return redirect()->back()->with('error', 'Failed to add book');
         }
-    }
-    
-    // Fetch details of a specific book
-    public function show($id = null)
-    {
-        $model = new BookModel();
-        $book = $model->find($id);
-
-        if (!$book) {
-            return $this->failNotFound('Book not found');
-        }
-
-        return view('show', ['book' => $book]);
     }
 
     // Update a book's information (e.g., availability status)
@@ -63,14 +54,19 @@ class BooksController extends ResourceController
             return $this->failNotFound('Book not found');
         }
     
-        // If the form is submitted (POST method), handle the update
+        // If the form is submitted via POST
         if ($this->request->getMethod() === 'post') {
+            // Validation and data updates
             $data = [
-                'title'    => $this->request->getPost('title'),
-                'author'   => $this->request->getPost('author'),
-                'available'=> $this->request->getPost('available'),
+                'title' => $this->request->getPost('title'),
+                'author' => $this->request->getPost('author'),
+                'genre' => $this->request->getPost('genre'),
+                'isbn' => $this->request->getPost('isbn'),
+                'published_date' => $this->request->getPost('published_date'),
+                'availability_status' => $this->request->getPost('availability_status')
             ];
     
+            // Update the book data
             if (!$model->update($id, $data)) {
                 return $this->failValidationErrors($model->errors());
             }
@@ -78,41 +74,20 @@ class BooksController extends ResourceController
             return redirect()->to('/books')->with('success', 'Book updated successfully!');
         }
     
-        // If the form hasn't been submitted, show the form with current values
+        // If it's a GET request, show the update form with the current book data
         return view('update', ['book' => $book]);
     }
     
-
-    // Checkout a book
-    // Toggle availability of a book
-    public function toggleAvailability($id = null)
-    {
-        $model = new BookModel();
-        $book = $model->find($id);
-
-        if (!$book) {
-            return $this->failNotFound('Book not found');
-        }
-
-        // Toggle availability (1 <-> 0)
-        $book['available'] = $book['available'] == 1 ? 0 : 1;
-
-        if (!$model->update($id, $book)) {
-            return $this->fail('Failed to update book availability');
-        }
-
-        return redirect()->to('/books')->with('success', 'Book availability updated!');
-    }
-    // Delete a specific book
+    
     public function delete($id = null)
     {
         $model = new BookModel();
-        $book = $model->find($id);
-
+        $book = $model->find($id);  // Find the book by UUID
+    
         if (!$book) {
             return $this->failNotFound('Book not found');
         }
-
+    
         // Attempt to delete the book
         if ($model->delete($id)) {
             return redirect()->to('/books')->with('success', 'Book deleted successfully!');
@@ -120,4 +95,38 @@ class BooksController extends ResourceController
             return redirect()->back()->with('error', 'Failed to delete book');
         }
     }
+    
+    
+    public function toggleAvailability($id = null)
+    {
+        $model = new BookModel();
+        $book = $model->find($id);
+    
+        if (!$book) {
+            return $this->failNotFound('Book not found');
+        }
+    
+        // Toggle availability status
+        $newStatus = $book['availability_status'] == 'Available' ? 'Borrowed' : 'Available';
+        $book['availability_status'] = $newStatus;
+    
+        if (!$model->update($id, $book)) {
+            return $this->fail('Failed to update book availability');
+        }
+    
+        return redirect()->to('/books')->with('success', 'Book availability updated!');
+    }
+
+    public function show($id = null)
+    {
+        $model = new BookModel();
+        $book = $model->find($id);
+
+        if (!$book) {
+            return $this->failNotFound('Book not found');
+        }
+
+        return view('show', ['book' => $book]);
+    }
+
 }

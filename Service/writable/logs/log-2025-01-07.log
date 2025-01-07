@@ -1,0 +1,365 @@
+CRITICAL - 2025-01-07 09:26:39 --> CodeIgniter\Database\Exceptions\DataException: There is no primary key defined when trying to make insert.
+[Method: POST, Route: books/create]
+in SYSTEMPATH/Model.php on line 358.
+ 1 SYSTEMPATH/Model.php(358): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/BooksController.php(39): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:26:50 --> CodeIgniter\Database\Exceptions\DataException: There is no primary key defined when trying to make insert.
+[Method: POST, Route: books/create]
+in SYSTEMPATH/Model.php on line 358.
+ 1 SYSTEMPATH/Model.php(358): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/BooksController.php(39): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:31:19 --> CodeIgniter\Database\Exceptions\DataException: There is no primary key defined when trying to make insert.
+[Method: POST, Route: books/create]
+in SYSTEMPATH/Model.php on line 358.
+ 1 SYSTEMPATH/Model.php(358): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/BooksController.php(39): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:31:24 --> CodeIgniter\Database\Exceptions\DataException: There is no primary key defined when trying to make insert.
+[Method: POST, Route: books/create]
+in SYSTEMPATH/Model.php on line 358.
+ 1 SYSTEMPATH/Model.php(358): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/BooksController.php(39): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+ERROR - 2025-01-07 09:34:30 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists. in /var/www/html/system/Database/Postgre/Connection.php:205
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 205)
+#1 /var/www/html/system/Database/Postgre/Connection.php(205): pg_query(Object(PgSql\Connection), 'INSERT INTO "bo...')
+#2 /var/www/html/system/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "bo...')
+#3 /var/www/html/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "bo...')
+#4 /var/www/html/system/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "bo...', Array, false)
+#5 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 /var/www/html/system/BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#7 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#8 /var/www/html/app/Controllers/BooksController.php(40): CodeIgniter\Model->insert(Array)
+#9 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->create()
+#10 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#11 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 /var/www/html/system/rewrite.php(44): require_once('/var/www/html/p...')
+#16 {main}
+CRITICAL - 2025-01-07 09:34:30 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists.
+[Method: POST, Route: books/create]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/BooksController.php(40): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:34:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 210.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf5261df64\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:34:30\', \'2025-01-07 09:34:30\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf5261df64\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:34:30\', \'2025-01-07 09:34:30\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH/Controllers/BooksController.php(40): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:34:30 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 205.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists.', '/var/www/html/system/Database/Postgre/Connection.php', 205)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(205): pg_query(Object(PgSql\Connection), 'INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf5261df64\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:34:30\', \'2025-01-07 09:34:30\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf5261df64\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:34:30\', \'2025-01-07 09:34:30\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf5261df64\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:34:30\', \'2025-01-07 09:34:30\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH/Controllers/BooksController.php(40): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+11 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+12 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+ERROR - 2025-01-07 09:34:53 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists. in /var/www/html/system/Database/Postgre/Connection.php:205
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 205)
+#1 /var/www/html/system/Database/Postgre/Connection.php(205): pg_query(Object(PgSql\Connection), 'INSERT INTO "bo...')
+#2 /var/www/html/system/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "bo...')
+#3 /var/www/html/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "bo...')
+#4 /var/www/html/system/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "bo...', Array, false)
+#5 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 /var/www/html/system/BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#7 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#8 /var/www/html/app/Controllers/BooksController.php(40): CodeIgniter\Model->insert(Array)
+#9 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->create()
+#10 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#11 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 /var/www/html/system/rewrite.php(44): require_once('/var/www/html/p...')
+#16 {main}
+CRITICAL - 2025-01-07 09:34:53 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists.
+[Method: POST, Route: books/create]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/BooksController.php(40): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:34:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 210.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf53d11776\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:34:53\', \'2025-01-07 09:34:53\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf53d11776\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:34:53\', \'2025-01-07 09:34:53\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH/Controllers/BooksController.php(40): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:34:53 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 205.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists.', '/var/www/html/system/Database/Postgre/Connection.php', 205)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(205): pg_query(Object(PgSql\Connection), 'INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf53d11776\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:34:53\', \'2025-01-07 09:34:53\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf53d11776\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:34:53\', \'2025-01-07 09:34:53\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf53d11776\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:34:53\', \'2025-01-07 09:34:53\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH/Controllers/BooksController.php(40): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+11 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+12 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+ERROR - 2025-01-07 09:36:02 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists. in /var/www/html/system/Database/Postgre/Connection.php:205
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 205)
+#1 /var/www/html/system/Database/Postgre/Connection.php(205): pg_query(Object(PgSql\Connection), 'INSERT INTO "bo...')
+#2 /var/www/html/system/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "bo...')
+#3 /var/www/html/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "bo...')
+#4 /var/www/html/system/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "bo...', Array, false)
+#5 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 /var/www/html/system/BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#7 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#8 /var/www/html/app/Controllers/BooksController.php(40): CodeIgniter\Model->insert(Array)
+#9 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->create()
+#10 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#11 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 /var/www/html/system/rewrite.php(44): require_once('/var/www/html/p...')
+#16 {main}
+CRITICAL - 2025-01-07 09:36:02 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists.
+[Method: POST, Route: books/create]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/BooksController.php(40): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:36:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 210.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf582b2022\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:36:02\', \'2025-01-07 09:36:02\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf582b2022\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:36:02\', \'2025-01-07 09:36:02\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH/Controllers/BooksController.php(40): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:36:02 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 205.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn_key&quot;
+DETAIL:  Key (isbn)=(q2) already exists.', '/var/www/html/system/Database/Postgre/Connection.php', 205)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(205): pg_query(Object(PgSql\Connection), 'INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf582b2022\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:36:02\', \'2025-01-07 09:36:02\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf582b2022\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:36:02\', \'2025-01-07 09:36:02\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677cf582b2022\', \'wq\', \'21\', \'swq\', \'q2\', \'2025-01-07\', \'Available\', \'2025-01-07 09:36:02\', \'2025-01-07 09:36:02\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH/Controllers/BooksController.php(40): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+11 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+12 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:44:10 --> ErrorException: Undefined array key "available"
+[Method: GET, Route: books/show/677ce40b153d5]
+in APPPATH/Views/show.php on line 14.
+ 1 APPPATH/Views/show.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "available"', '/var/www/html/app/Views/show.php', 14)
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/app/Views/show.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('show', [], true)
+ 5 APPPATH/Controllers/BooksController.php(122): view('show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->show('677ce40b153d5')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:44:32 --> ErrorException: Undefined array key "available"
+[Method: GET, Route: books/show/677ce40b153d5]
+in APPPATH/Views/show.php on line 14.
+ 1 APPPATH/Views/show.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "available"', '/var/www/html/app/Views/show.php', 14)
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/app/Views/show.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('show', [], true)
+ 5 APPPATH/Controllers/BooksController.php(122): view('show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->show('677ce40b153d5')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:44:35 --> ErrorException: Undefined array key "available"
+[Method: GET, Route: books/update/677ce40b153d5]
+in APPPATH/Views/update.php on line 21.
+ 1 APPPATH/Views/update.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "available"', '/var/www/html/app/Views/update.php', 21)
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/app/Views/update.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('update', [], true)
+ 5 APPPATH/Controllers/BooksController.php(74): view('update', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->update('677ce40b153d5')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:46:03 --> ErrorException: Undefined array key "available"
+[Method: GET, Route: books/show/677cf507d5978]
+in APPPATH/Views/show.php on line 14.
+ 1 APPPATH/Views/show.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "available"', '/var/www/html/app/Views/show.php', 14)
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/app/Views/show.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('show', [], true)
+ 5 APPPATH/Controllers/BooksController.php(122): view('show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->show('677cf507d5978')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:46:06 --> ErrorException: Undefined array key "available"
+[Method: GET, Route: books/update/677cf507d5978]
+in APPPATH/Views/update.php on line 21.
+ 1 APPPATH/Views/update.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "available"', '/var/www/html/app/Views/update.php', 21)
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/app/Views/update.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('update', [], true)
+ 5 APPPATH/Controllers/BooksController.php(74): view('update', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->update('677cf507d5978')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:46:24 --> ErrorException: Undefined array key "available"
+[Method: GET, Route: books/update/677cf507d5978]
+in APPPATH/Views/update.php on line 21.
+ 1 APPPATH/Views/update.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "available"', '/var/www/html/app/Views/update.php', 21)
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/app/Views/update.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('update', [], true)
+ 5 APPPATH/Controllers/BooksController.php(74): view('update', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->update('677cf507d5978')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')

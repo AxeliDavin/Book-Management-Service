@@ -5,10 +5,22 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('books', 'BooksController::index'); // List all books
-$routes->post('books/create', 'BooksController::create'); // Create new book
-$routes->get('books/show/(:num)', 'BooksController::show/$1'); // Show details of a book
-$routes->get('books/update/(:num)', 'BooksController::update/$1'); // Update a book
-$routes->match(['get', 'post'], 'books/update/(:num)', 'BooksController::update/$1');
-$routes->delete('books/(:num)', 'BooksController::delete/$1');
-$routes->get('books/toggleAvailability/(:num)', 'BooksController::toggleAvailability/$1');
+// List all books
+$routes->get('/', 'BooksController::index');
+$routes->get('books', 'BooksController::index');
+
+// Create a new book
+$routes->post('books/create', 'BooksController::create');
+
+// Show details of a specific book
+$routes->get('books/show/(:any)', 'BooksController::show/$1');
+
+// Update a specific book
+$routes->match(['get', 'post'], 'books/update/(:any)', 'BooksController::update/$1');
+
+// Delete a specific book
+$routes->delete('books/(:any)', 'BooksController::delete/$1');
+
+
+// Toggle availability status of a book
+$routes->get('books/toggleAvailability/(:any)', 'BooksController::toggleAvailability/$1');
