@@ -363,3 +363,33 @@ in APPPATH/Views/update.php on line 21.
 10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:54:46 --> ErrorException: Undefined array key "available"
+[Method: GET, Route: books/update/677cf507d5978]
+in APPPATH/Views/update.php on line 21.
+ 1 APPPATH/Views/update.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "available"', '/var/www/html/app/Views/update.php', 21)
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/app/Views/update.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('update', [], true)
+ 5 APPPATH/Controllers/BooksController.php(107): view('update', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->update('677cf507d5978')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-07 09:54:54 --> ErrorException: Undefined array key "available"
+[Method: GET, Route: books/update/677cf4cdcca8d]
+in APPPATH/Views/update.php on line 21.
+ 1 APPPATH/Views/update.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "available"', '/var/www/html/app/Views/update.php', 21)
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/app/Views/update.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('update', [], true)
+ 5 APPPATH/Controllers/BooksController.php(107): view('update', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->update('677cf4cdcca8d')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')

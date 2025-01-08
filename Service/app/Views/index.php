@@ -9,7 +9,7 @@
 
 <h1>Books List</h1>
 
-<!-- Displaying success or error messages -->
+<!-- Displaying any messages like errors or success -->
 <?php if (session()->getFlashdata('error')): ?>
     <p style="color: red;"><?php echo session()->getFlashdata('error'); ?></p>
 <?php endif; ?>
@@ -18,9 +18,10 @@
 <?php endif; ?>
 
 <!-- Table to display books -->
-<table border="1" cellpadding="5" cellspacing="0">
+<table border="1">
     <thead>
         <tr>
+            <th>ID</th>
             <th>Title</th>
             <th>Author</th>
             <th>Genre</th>
@@ -33,6 +34,7 @@
     <tbody>
         <?php foreach ($books as $book): ?>
             <tr>
+                <td><?= esc($book['id']) ?></td>
                 <td><?= esc($book['title']) ?></td>
                 <td><?= esc($book['author']) ?></td>
                 <td><?= esc($book['genre']) ?></td>
@@ -40,23 +42,15 @@
                 <td><?= esc($book['published_date']) ?></td>
                 <td><?= esc($book['availability_status']) ?></td>
                 <td>
-                <!-- View Button -->
-                <a href="<?= site_url('books/show/' . $book['id']) ?>">View</a>
-
-                <!-- Edit Button -->
-                <a href="<?= site_url('books/update/' . $book['id']) ?>">Edit</a>
-
-                <!-- Delete Form -->
-                <form action="<?= site_url('books/delete/' . $book['id']) ?>" method="post" style="display:inline;">
-                    <?= csrf_field() ?>
-                    <input type="hidden" name="_method" value="DELETE">
-                    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this book?');">Delete</button>
-                </form>
-
-                <!-- Toggle Availability Button -->
-                <a href="<?= site_url('books/toggleAvailability/' . $book['id']) ?>" class="btn btn-warning">
-                    <?= $book['availability_status'] == 'Available' ? 'Mark as Borrowed' : 'Mark as Available' ?>
-                </a>    
+                    <a href="<?= site_url('books/update/' . $book['id']) ?>">Edit</a> |
+                    <form action="<?= site_url('books/delete/' . $book['id']) ?>" method="post" style="display:inline;">
+                        <?= csrf_field() ?>
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this book?');">Delete</button> |
+                    </form>
+                    <a href="<?= site_url('books/toggleAvailability/' . $book['id']) ?>" class="btn btn-warning">
+                        <?= $book['availability_status'] == 'Available' ? 'Mark as Borrowed' : 'Mark as Available' ?>
+                    </a>
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -83,7 +77,7 @@
     <input type="date" id="published_date" name="published_date" required><br><br>
 
     <label for="availability_status">Availability Status:</label>
-    <select id="availability_status" name="availability_status" required>
+    <select id="availability_status" name="availability_status">
         <option value="Available">Available</option>
         <option value="Borrowed">Borrowed</option>
     </select><br><br>

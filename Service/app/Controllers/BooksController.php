@@ -14,9 +14,9 @@ class BooksController extends ResourceController
     {
         $model = new BookModel();
         $data['books'] = $model->findAll();  // Fetching all books from the database
-    
-        return view('index', $data);  // Ensure this view path is correct
+        return view('index', $data);  // Pass books data to the view
     }
+    
 
     // Create a new book
     public function create()
@@ -43,59 +43,6 @@ class BooksController extends ResourceController
             return redirect()->back()->with('error', 'Failed to add book');
         }
     }
-
-    // Update a book's information (e.g., availability status)
-    public function update($id = null)
-    {
-        $model = new BookModel();
-        $book = $model->find($id);
-    
-        if (!$book) {
-            return $this->failNotFound('Book not found');
-        }
-    
-        // If the form is submitted via POST
-        if ($this->request->getMethod() === 'post') {
-            // Validation and data updates
-            $data = [
-                'title' => $this->request->getPost('title'),
-                'author' => $this->request->getPost('author'),
-                'genre' => $this->request->getPost('genre'),
-                'isbn' => $this->request->getPost('isbn'),
-                'published_date' => $this->request->getPost('published_date'),
-                'availability_status' => $this->request->getPost('availability_status')
-            ];
-    
-            // Update the book data
-            if (!$model->update($id, $data)) {
-                return $this->failValidationErrors($model->errors());
-            }
-    
-            return redirect()->to('/books')->with('success', 'Book updated successfully!');
-        }
-    
-        // If it's a GET request, show the update form with the current book data
-        return view('update', ['book' => $book]);
-    }
-    
-    
-    public function delete($id = null)
-    {
-        $model = new BookModel();
-        $book = $model->find($id);  // Find the book by UUID
-    
-        if (!$book) {
-            return $this->failNotFound('Book not found');
-        }
-    
-        // Attempt to delete the book
-        if ($model->delete($id)) {
-            return redirect()->to('/books')->with('success', 'Book deleted successfully!');
-        } else {
-            return redirect()->back()->with('error', 'Failed to delete book');
-        }
-    }
-    
     
     public function toggleAvailability($id = null)
     {
@@ -117,16 +64,57 @@ class BooksController extends ResourceController
         return redirect()->to('/books')->with('success', 'Book availability updated!');
     }
 
-    public function show($id = null)
+    // Update a book's information
+    public function update($id = null)
     {
         $model = new BookModel();
         $book = $model->find($id);
-
+    
         if (!$book) {
             return $this->failNotFound('Book not found');
         }
-
-        return view('show', ['book' => $book]);
+    
+        // Log the request method
+        log_message('debug', 'Request method: ' . $this->request->getMethod());
+    
+        if ($this->request->getMethod() === 'post' || $this->request->getMethod() === 'put') {
+            log_message('debug', 'Received data: ' . print_r($this->request->getPost(), true));
+    
+            $data = [
+                'title'    => $this->request->getPost('title'),
+                'author'   => $this->request->getPost('author'),
+                'genre'    => $this->request->getPost('genre'),
+                'isbn'     => $this->request->getPost('isbn'),
+                'published_date' => $this->request->getPost('published_date'),
+                'availability_status' => $this->request->getPost('availability_status'),
+            ];
+    
+            if (!$model->update($id, $data)) {
+                log_message('error', 'Update failed: ' . print_r($model->errors(), true));
+                return view('update', [
+                    'book' => $book,
+                    'errors' => $model->errors(),
+                ]);
+            }
+    
+            return redirect()->to('/books')->with('success', 'Book updated successfully!');
+        }
+    
+        return view('update', ['book' => $book]);
     }
-
+    
+    public function delete($id = null)
+    {
+        $model = new BookModel();
+    
+        if (!$model->find($id)) {
+            return $this->failNotFound('Book not found');
+        }
+    
+        if ($model->delete($id)) {
+            return redirect()->to('/books')->with('success', 'Book deleted successfully!');
+        } else {
+            return redirect()->back()->with('error', 'Failed to delete book.');
+        }
+    }    
 }
