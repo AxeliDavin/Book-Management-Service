@@ -117,4 +117,25 @@ class BooksController extends ResourceController
             return redirect()->back()->with('error', 'Failed to delete book.');
         }
     }    
+    
+    public function show($id = null)
+    {
+        $model = new BookModel();
+    
+        if ($id === null) {
+            // If no ID is provided, return all books
+            $books = $model->findAll();
+            return $this->respond($books);
+        }
+    
+        // If ID is provided, return a specific book
+        $book = $model->find($id);
+    
+        if (!$book) {
+            return $this->failNotFound('Book not found');
+        }
+    
+        return $this->respond($book);
+    }
+
 }
