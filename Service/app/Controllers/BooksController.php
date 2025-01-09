@@ -94,7 +94,7 @@ class BooksController extends ResourceController
                 'availability_status' => $this->request->getPost('availability_status'),
             ];
     
-            if (!$model->update($id, $data)) {
+            if (!$model->update($id, $data)) {  
                 log_message('error', 'Update failed: ' . print_r($model->errors(), true));
                 return view('update', [
                     'book' => $book,
