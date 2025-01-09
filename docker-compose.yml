@@ -1,7 +1,7 @@
 services:
   php:
     image: php:8.1-fpm
-    container_name: ci4_php_fpm
+    container_name: book_service
     volumes:
       - ./Service:/var/www/html:z
     user: "${UID}:${GID}"
@@ -35,7 +35,7 @@ services:
       
   db:
     image: postgres:13
-    container_name: ci4_postgres
+    container_name: book_db
     environment:
       POSTGRES_USER: ${DB_USERNAME}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
