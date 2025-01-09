@@ -3,8 +3,7 @@ services:
     image: php:8.1-fpm
     container_name: book_service
     volumes:
-      - ./Service:/var/www/html:z
-    user: "${UID}:${GID}"
+      - book_service:/var/www/html:z
     networks:
       - ci4_network
     environment:
@@ -41,7 +40,7 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: ${DB_DATABASE}
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - book_data:/var/lib/postgresql/data
     networks:
       - ci4_network
 
