@@ -1,8 +1,10 @@
 services:
   php:
-    build:
-      dockerfile: Dockerfile
-    container_name: book_service
+    image: php:8.1-fpm
+    container_name: ci4_php_fpm
+    volumes:
+      - ./Service:/var/www/html:z
+    user: "${UID}:${GID}"
     networks:
       - ci4_network
     environment:
@@ -33,18 +35,18 @@ services:
       
   db:
     image: postgres:13
-    container_name: book_db
+    container_name: ci4_postgres
     environment:
       POSTGRES_USER: ${DB_USERNAME}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: ${DB_DATABASE}
     volumes:
-      - book_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
     networks:
       - ci4_network
 
 volumes:
-  book_data:
+  postgres_data:
 
 networks:
   ci4_network:
