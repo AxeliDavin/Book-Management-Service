@@ -13,7 +13,7 @@
     <p style="color: red;"><?php echo session()->getFlashdata('error'); ?></p>
 <?php endif; ?>
 
-<form method="POST" action="/login">
+<form method="POST" action="<?php echo getenv('APP_URL') . '/login'; ?>">
     <input type="text" name="username" placeholder="Username" required>
     <input type="password" name="password" placeholder="Password" required>
     <button type="submit">Login</button>

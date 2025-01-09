@@ -10,7 +10,7 @@
 <h1>Edit Book</h1>
 
 <!-- Form to edit the book details -->
-<form action="<?= site_url('books/update/' . $book['id']) ?>" method="post">
+<form action="<?= getenv('APP_URL') . '/books/update/' . $book['id']; ?>" method="post">
     <?= csrf_field() ?>
 
     <label for="title">Title:</label>

@@ -13,6 +13,7 @@ services:
       - DB_PASSWORD=${DB_PASSWORD}
       - JWT_SECRET_KEY=${JWT_SECRET_KEY}
       - JWT_EXPIRATION=${JWT_EXPIRATION}
+      - APP_URL=${APP_URL}
     expose:
       - "8080"
     ports:
@@ -27,6 +28,8 @@ services:
         php composer-setup.php &&
         php -r 'unlink(\"composer-setup.php\");' &&
         php composer.phar require firebase/php-jwt &&
+        composer remove firebase/php-jwt &&
+        composer require firebase/php-jwt &&
         php spark migrate &&
         php spark serve --host 0.0.0.0 --port 8080
       "

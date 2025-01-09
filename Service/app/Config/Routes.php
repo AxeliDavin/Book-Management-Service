@@ -1,9 +1,6 @@
 <?php
 namespace Config;
 
-use App\Controllers\AuthController;
-use App\Filters\AuthFilter;
-
 $routes->get('/', 'AuthController::index');  // Show login page
 $routes->get('login', 'AuthController::index');  // Show login page
 $routes->post('login', 'AuthController::login'); // Handle login form submission
