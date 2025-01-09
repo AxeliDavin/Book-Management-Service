@@ -20,16 +20,28 @@ class AuthController extends Controller
                 $jwt = session()->get('auth_token');
                 $decoded = JWT::decode($jwt, getenv('JWT_SECRET_KEY'), ['HS256']);
                 // If token is valid, redirect to the books page
-                return redirect()->to(getenv('APP_URL') . '/books');
+                return $this->respond([
+                    'status' => 'success',
+                    'message' => 'Redirecting to books page...',
+                    'redirect' => getenv('APP_URL') . '/books'
+                ]);
             } catch (Exception $e) {
                 // If the token is invalid or expired, clear session and redirect to login
                 session()->remove('auth_token');
-                return redirect()->to(getenv('APP_URL') . '/login');
+                return $this->respond([
+                    'status' => 'error',
+                    'message' => 'Session expired or invalid token, please login again.',
+                    'redirect' => getenv('APP_URL') . '/login'
+                ]);
             }
         }
-    
-        // If no token found, show the login page
-        return view('login'); // or return a response for your login form
+
+        // If no token found, send a message indicating the user should login
+        return $this->respond([
+            'status' => 'info',
+            'message' => 'No active session found, please login.',
+            'redirect' => getenv('APP_URL') . '/login'
+        ]);
     }
 
     // Handle login form submission
@@ -37,7 +49,11 @@ class AuthController extends Controller
     {
         // Check if user is already logged in (avoid submitting form if logged in)
         if (session()->has('auth_token')) {
-            return redirect()->to(getenv('APP_URL') . '/books');
+            return $this->respond([
+                'status' => 'success',
+                'message' => 'Already logged in, redirecting to books page.',
+                'redirect' => getenv('APP_URL') . '/books'
+            ]);
         }
 
         $username = $this->request->getPost('username');
@@ -61,10 +77,18 @@ class AuthController extends Controller
             session()->set('auth_token', $jwt);
     
             // Redirect to the books page after successful login
-            return redirect()->to(getenv('APP_URL') . '/books');
+            return $this->respond([
+                'status' => 'success',
+                'message' => 'Login successful!',
+                'redirect' => getenv('APP_URL') . '/books'
+            ]);
         } else {
-            // If login fails, redirect back to login with an error message (no view rendering)
-            return redirect()->to(getenv('APP_URL') . '/login')->with('error', 'Invalid credentials');
+            // If login fails, send a failure message and redirection info
+            return $this->respond([
+                'status' => 'error',
+                'message' => 'Invalid credentials, please try again.',
+                'redirect' => getenv('APP_URL') . '/login'
+            ]);
         }
     }
 
@@ -75,7 +99,11 @@ class AuthController extends Controller
         session()->remove('auth_token');
         session()->destroy();
     
-        // Redirect to the login page after logging out
-        return redirect()->to(getenv('APP_URL') . '/login');
+        // Send a response to indicate successful logout and redirection
+        return $this->respond([
+            'status' => 'success',
+            'message' => 'Logged out successfully.',
+            'redirect' => getenv('APP_URL') . '/login'
+        ]);
     }
 }
