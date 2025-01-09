@@ -1,0 +1,693 @@
+CRITICAL - 2025-01-09 04:54:59 --> Error: Class "App\Models\UserModel" not found
+[Method: GET, Route: /]
+in APPPATH/Controllers/AuthController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 04:55:01 --> Error: Class "App\Models\UserModel" not found
+[Method: GET, Route: /]
+in APPPATH/Controllers/AuthController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:06:20 --> Error: Class "App\Controllers\UserModel" not found
+[Method: POST, Route: auth/login]
+in APPPATH/Controllers/AuthController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:07:09 --> Error: Class "App\Models\UserModel" not found
+[Method: GET, Route: /]
+in APPPATH/Controllers/AuthController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:08:31 --> Error: Class "App\Models\UserModel" not found
+[Method: GET, Route: /]
+in APPPATH/Controllers/AuthController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:18:19 --> ErrorException: Type of Config\Filters::$filters must be array (as in class CodeIgniter\Config\Filters)
+[Method: GET, Route: /]
+in APPPATH/Config/Filters.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-01-09 05:18:59 --> ErrorException: Type of Config\Filters::$filters must be array (as in class CodeIgniter\Config\Filters)
+[Method: GET, Route: books/]
+in APPPATH/Config/Filters.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-01-09 05:19:32 --> ErrorException: Type of Config\Filters::$filters must be array (as in class CodeIgniter\Config\Filters)
+[Method: GET, Route: books/]
+in APPPATH/Config/Filters.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-01-09 05:34:08 --> CodeIgniter\Filters\Exceptions\FilterException: "AuthFilter" filter must have a matching alias defined.
+[Method: GET, Route: books/]
+in SYSTEMPATH/Filters/Filters.php on line 778.
+ 1 SYSTEMPATH/Filters/Filters.php(778): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthFilter')
+ 2 SYSTEMPATH/Filters/Filters.php(406): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(181): CodeIgniter\Filters\Filters->initialize('books/')
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:34:14 --> CodeIgniter\Filters\Exceptions\FilterException: "AuthFilter" filter must have a matching alias defined.
+[Method: GET, Route: /]
+in SYSTEMPATH/Filters/Filters.php on line 778.
+ 1 SYSTEMPATH/Filters/Filters.php(778): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthFilter')
+ 2 SYSTEMPATH/Filters/Filters.php(406): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:34:47 --> CodeIgniter\Filters\Exceptions\FilterException: "AuthFilter" filter must have a matching alias defined.
+[Method: GET, Route: /]
+in SYSTEMPATH/Filters/Filters.php on line 778.
+ 1 SYSTEMPATH/Filters/Filters.php(778): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthFilter')
+ 2 SYSTEMPATH/Filters/Filters.php(406): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:35:59 --> CodeIgniter\Filters\Exceptions\FilterException: "AuthFilter" filter must have a matching alias defined.
+[Method: GET, Route: /]
+in SYSTEMPATH/Filters/Filters.php on line 778.
+ 1 SYSTEMPATH/Filters/Filters.php(778): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthFilter')
+ 2 SYSTEMPATH/Filters/Filters.php(406): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:36:09 --> Error: Class "App\Models\AuthModel" not found
+[Method: POST, Route: login]
+in APPPATH/Controllers/AuthController.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:37:08 --> CodeIgniter\Filters\Exceptions\FilterException: "AuthFilter" filter must have a matching alias defined.
+[Method: GET, Route: /]
+in SYSTEMPATH/Filters/Filters.php on line 778.
+ 1 SYSTEMPATH/Filters/Filters.php(778): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthFilter')
+ 2 SYSTEMPATH/Filters/Filters.php(406): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:38:29 --> CodeIgniter\Filters\Exceptions\FilterException: "AuthFilter" filter must have a matching alias defined.
+[Method: GET, Route: /]
+in SYSTEMPATH/Filters/Filters.php on line 778.
+ 1 SYSTEMPATH/Filters/Filters.php(778): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthFilter')
+ 2 SYSTEMPATH/Filters/Filters.php(406): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:38:42 --> Error: Class "App\Models\AuthModel" not found
+[Method: POST, Route: login]
+in APPPATH/Controllers/AuthController.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:41:39 --> CodeIgniter\Filters\Exceptions\FilterException: "AuthFilter" filter must have a matching alias defined.
+[Method: GET, Route: /]
+in SYSTEMPATH/Filters/Filters.php on line 778.
+ 1 SYSTEMPATH/Filters/Filters.php(778): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthFilter')
+ 2 SYSTEMPATH/Filters/Filters.php(406): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:42:38 --> CodeIgniter\Filters\Exceptions\FilterException: "AuthFilter" filter must have a matching alias defined.
+[Method: GET, Route: /]
+in SYSTEMPATH/Filters/Filters.php on line 778.
+ 1 SYSTEMPATH/Filters/Filters.php(778): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthFilter')
+ 2 SYSTEMPATH/Filters/Filters.php(406): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:42:50 --> Error: Class "Firebase\JWT\JWT" not found
+[Method: POST, Route: login]
+in APPPATH/Controllers/AuthController.php on line 41.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:52:14 --> ArgumentCountError: Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /var/www/html/app/Controllers/AuthController.php on line 41 and at least 3 expected
+[Method: POST, Route: login]
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 199.
+ 1 APPPATH/Controllers/AuthController.php(41): Firebase\JWT\JWT::encode([...], false)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:52:21 --> CodeIgniter\Filters\Exceptions\FilterException: "AuthFilter" filter must have a matching alias defined.
+[Method: GET, Route: books/]
+in SYSTEMPATH/Filters/Filters.php on line 778.
+ 1 SYSTEMPATH/Filters/Filters.php(778): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthFilter')
+ 2 SYSTEMPATH/Filters/Filters.php(406): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(181): CodeIgniter\Filters\Filters->initialize('books/')
+ 4 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:58:20 --> Error: Class "Config\AuthFilter" not found
+[Method: GET, Route: books/]
+in SYSTEMPATH/Filters/Filters.php on line 197.
+ 1 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books/', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:58:39 --> ArgumentCountError: Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /var/www/html/app/Controllers/AuthController.php on line 41 and at least 3 expected
+[Method: POST, Route: login]
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 199.
+ 1 APPPATH/Controllers/AuthController.php(41): Firebase\JWT\JWT::encode([...], false)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 05:58:52 --> ArgumentCountError: Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /var/www/html/app/Controllers/AuthController.php on line 41 and at least 3 expected
+[Method: POST, Route: login]
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 199.
+ 1 APPPATH/Controllers/AuthController.php(41): Firebase\JWT\JWT::encode([...], false)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:00:21 --> ArgumentCountError: Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /var/www/html/app/Controllers/AuthController.php on line 43 and at least 3 expected
+[Method: POST, Route: login]
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 199.
+ 1 APPPATH/Controllers/AuthController.php(43): Firebase\JWT\JWT::encode([...], false)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:01:36 --> ArgumentCountError: Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /var/www/html/app/Controllers/AuthController.php on line 43 and at least 3 expected
+[Method: POST, Route: login]
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 199.
+ 1 APPPATH/Controllers/AuthController.php(43): Firebase\JWT\JWT::encode([...], 'cingcong')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:01:51 --> ArgumentCountError: Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /var/www/html/app/Controllers/AuthController.php on line 43 and at least 3 expected
+[Method: POST, Route: login]
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 199.
+ 1 APPPATH/Controllers/AuthController.php(43): Firebase\JWT\JWT::encode([...], 'cingcong')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:02:55 --> InvalidArgumentException: key must be a string when using hmac
+[Method: POST, Route: login]
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 249.
+ 1 VENDORPATH/firebase/php-jwt/src/JWT.php(219): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzY0MDI1NzUsImV4cCI6MTczNjQwMjU3NSwic3ViIjoiMSIsInJvbGUiOiJhZG1pbiJ9', false, 'HS256')
+ 2 APPPATH/Controllers/AuthController.php(44): Firebase\JWT\JWT::encode([...], false, 'HS256')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:06:52 --> InvalidArgumentException: key must be a string when using hmac
+[Method: POST, Route: login]
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 249.
+ 1 VENDORPATH/firebase/php-jwt/src/JWT.php(219): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzY0MDI4MTEsImV4cCI6MTczNjQwMjgxMSwic3ViIjoiMSIsInJvbGUiOiJhZG1pbiJ9', false, 'HS256')
+ 2 APPPATH/Controllers/AuthController.php(44): Firebase\JWT\JWT::encode([...], false, 'HS256')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:07:05 --> InvalidArgumentException: key must be a string when using hmac
+[Method: POST, Route: login]
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 249.
+ 1 VENDORPATH/firebase/php-jwt/src/JWT.php(219): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzY0MDI4MjUsImV4cCI6MTczNjQwMjgyNSwic3ViIjoiMSIsInJvbGUiOiJhZG1pbiJ9', false, 'HS256')
+ 2 APPPATH/Controllers/AuthController.php(44): Firebase\JWT\JWT::encode([...], false, 'HS256')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:12:13 --> Error: Class "Config\AuthFilter" not found
+[Method: GET, Route: books/]
+in SYSTEMPATH/Filters/Filters.php on line 197.
+ 1 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books/', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:12:28 --> Error: Class "Config\AuthFilter" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/Filters/Filters.php on line 197.
+ 1 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:12:36 --> Error: Class "Config\AuthFilter" not found
+[Method: GET, Route: books/]
+in SYSTEMPATH/Filters/Filters.php on line 197.
+ 1 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books/', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:16:20 --> Error: Class "Config\AuthFilter" not found
+[Method: GET, Route: login]
+in SYSTEMPATH/Filters/Filters.php on line 197.
+ 1 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('login', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:16:24 --> Error: Class "Config\AuthFilter" not found
+[Method: GET, Route: login]
+in SYSTEMPATH/Filters/Filters.php on line 197.
+ 1 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('login', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:16:30 --> Error: Class "Config\AuthFilter" not found
+[Method: GET, Route: books/]
+in SYSTEMPATH/Filters/Filters.php on line 197.
+ 1 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books/', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:17:33 --> Error: Class "Config\AuthFilter" not found
+[Method: GET, Route: login]
+in SYSTEMPATH/Filters/Filters.php on line 197.
+ 1 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('login', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:17:37 --> Error: Class "Config\AuthFilter" not found
+[Method: GET, Route: login]
+in SYSTEMPATH/Filters/Filters.php on line 197.
+ 1 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('login', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:17:52 --> Error: Class "Config\AuthFilter" not found
+[Method: GET, Route: login]
+in SYSTEMPATH/Filters/Filters.php on line 197.
+ 1 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('login', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:18:55 --> Error: Class "App\Models\AuthModel" not found
+[Method: POST, Route: login]
+in APPPATH/Controllers/AuthController.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:19:27 --> ArgumentCountError: Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /var/www/html/app/Controllers/AuthController.php on line 41 and at least 3 expected
+[Method: POST, Route: login]
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 199.
+ 1 APPPATH/Controllers/AuthController.php(41): Firebase\JWT\JWT::encode([...], 'cingcong')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:21:08 --> Error: Class "Config\AuthFilter" not found
+[Method: GET, Route: books/]
+in SYSTEMPATH/Filters/Filters.php on line 197.
+ 1 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books/', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 06:22:40 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: ""token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzY0MDM2NzgsImV4cCI6MTczNjQwNTQ3OCwic3ViIjoiMSIsInJvbGUiOiJhZG1pbiJ9.7M7QVTk9upHR-sAaW1zwGlkrGGNUef5SLcUUifJPess""
+[Method: GET, Route: books/%22token%22:%20%22eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzY0MDM2NzgsImV4cCI6MTczNjQwNTQ3OCwic3ViIjoiMSIsInJvbGUiOiJhZG1pbiJ9.7M7QVTk9upHR-sAaW1zwGlkrGGNUef5SLcUUifJPess%22]
+in SYSTEMPATH/Router/Router.php on line 737.
+ 1 SYSTEMPATH/Router/Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('books/"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzY0MDM2NzgsImV4cCI6MTczNjQwNTQ3OCwic3ViIjoiMSIsInJvbGUiOiJhZG1pbiJ9.7M7QVTk9upHR-sAaW1zwGlkrGGNUef5SLcUUifJPess"')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('books/"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzY0MDM2NzgsImV4cCI6MTczNjQwNTQ3OCwic3ViIjoiMSIsInJvbGUiOiJhZG1pbiJ9.7M7QVTk9upHR-sAaW1zwGlkrGGNUef5SLcUUifJPess"')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 07:29:00 --> Error: Class "Config\AuthFilter" not found
+[Method: GET, Route: books/]
+in SYSTEMPATH/Filters/Filters.php on line 197.
+ 1 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books/', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 07:55:35 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: books]
+in APPPATH/Filters/AuthFilter.php on line 27.
+ 1 SYSTEMPATH/Filters/Filters.php(205): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books', 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 07:55:41 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: books]
+in APPPATH/Filters/AuthFilter.php on line 27.
+ 1 SYSTEMPATH/Filters/Filters.php(205): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books', 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')CRITICAL - 2025-01-09 08:01:26 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: books]
+in APPPATH/Filters/AuthFilter.php on line 27.
+ 1 SYSTEMPATH/Filters/Filters.php(205): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books', 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 08:03:31 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: books]
+in APPPATH/Filters/AuthFilter.php on line 27.
+ 1 SYSTEMPATH/Filters/Filters.php(205): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books', 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 08:05:20 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: books]
+in APPPATH/Filters/AuthFilter.php on line 27.
+ 1 SYSTEMPATH/Filters/Filters.php(205): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books', 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 08:08:04 --> Error: Class "App\Filters\Key" not found
+[Method: GET, Route: books]
+in APPPATH/Filters/AuthFilter.php on line 27.
+ 1 SYSTEMPATH/Filters/Filters.php(205): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books', 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 08:10:07 --> Error: Interface "FilterInterface" not found
+[Method: GET, Route: books]
+in APPPATH/Filters/AuthFilter.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(316): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/var/www/html/app/Filters/AuthFilter.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH/Filters/Filters.php(197): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 08:10:17 --> Error: Interface "FilterInterface" not found
+[Method: GET, Route: books]
+in APPPATH/Filters/AuthFilter.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(316): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/var/www/html/app/Filters/AuthFilter.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH/Filters/Filters.php(197): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('books', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+ERROR - 2025-01-09 08:11:33 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn&quot;
+DETAIL:  Key (isbn)=(mambo) already exists. in /var/www/html/system/Database/Postgre/Connection.php:205
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 205)
+#1 /var/www/html/system/Database/Postgre/Connection.php(205): pg_query(Object(PgSql\Connection), 'INSERT INTO "bo...')
+#2 /var/www/html/system/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "bo...')
+#3 /var/www/html/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "bo...')
+#4 /var/www/html/system/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "bo...', Array, false)
+#5 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 /var/www/html/system/BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#7 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#8 /var/www/html/app/Controllers/BooksController.php(45): CodeIgniter\Model->insert(Array)
+#9 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->create()
+#10 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#11 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 /var/www/html/system/rewrite.php(44): require_once('/var/www/html/p...')
+#16 {main}
+CRITICAL - 2025-01-09 08:11:33 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn&quot;
+DETAIL:  Key (isbn)=(mambo) already exists.
+[Method: POST, Route: books/create]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/BooksController.php(45): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 08:11:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn&quot;
+DETAIL:  Key (isbn)=(mambo) already exists.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 210.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677f84b5a910d\', \'mambo2\', \'mambo\', \'mambo\', \'mambo\', \'2025-01-09\', \'Available\', \'2025-01-09 08:11:33\', \'2025-01-09 08:11:33\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677f84b5a910d\', \'mambo2\', \'mambo\', \'mambo\', \'mambo\', \'2025-01-09\', \'Available\', \'2025-01-09 08:11:33\', \'2025-01-09 08:11:33\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH/Controllers/BooksController.php(45): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 08:11:33 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn&quot;
+DETAIL:  Key (isbn)=(mambo) already exists.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 205.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn&quot;
+DETAIL:  Key (isbn)=(mambo) already exists.', '/var/www/html/system/Database/Postgre/Connection.php', 205)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(205): pg_query(Object(PgSql\Connection), 'INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677f84b5a910d\', \'mambo2\', \'mambo\', \'mambo\', \'mambo\', \'2025-01-09\', \'Available\', \'2025-01-09 08:11:33\', \'2025-01-09 08:11:33\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677f84b5a910d\', \'mambo2\', \'mambo\', \'mambo\', \'mambo\', \'2025-01-09\', \'Available\', \'2025-01-09 08:11:33\', \'2025-01-09 08:11:33\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677f84b5a910d\', \'mambo2\', \'mambo\', \'mambo\', \'mambo\', \'2025-01-09\', \'Available\', \'2025-01-09 08:11:33\', \'2025-01-09 08:11:33\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH/Controllers/BooksController.php(45): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+11 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+12 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+ERROR - 2025-01-09 08:12:53 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn&quot;
+DETAIL:  Key (isbn)=(mambo) already exists. in /var/www/html/system/Database/Postgre/Connection.php:205
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 205)
+#1 /var/www/html/system/Database/Postgre/Connection.php(205): pg_query(Object(PgSql\Connection), 'INSERT INTO "bo...')
+#2 /var/www/html/system/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "bo...')
+#3 /var/www/html/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "bo...')
+#4 /var/www/html/system/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "bo...', Array, false)
+#5 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 /var/www/html/system/BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#7 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#8 /var/www/html/app/Controllers/BooksController.php(45): CodeIgniter\Model->insert(Array)
+#9 /var/www/html/system/CodeIgniter.php(933): App\Controllers\BooksController->create()
+#10 /var/www/html/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#11 /var/www/html/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 /var/www/html/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 /var/www/html/system/rewrite.php(44): require_once('/var/www/html/p...')
+#16 {main}
+CRITICAL - 2025-01-09 08:12:53 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn&quot;
+DETAIL:  Key (isbn)=(mambo) already exists.
+[Method: POST, Route: books/create]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/BooksController.php(45): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 08:12:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn&quot;
+DETAIL:  Key (isbn)=(mambo) already exists.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 210.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677f8505c9be0\', \'mambo2\', \'mambo\', \'mambo\', \'mambo\', \'2025-01-09\', \'Available\', \'2025-01-09 08:12:53\', \'2025-01-09 08:12:53\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677f8505c9be0\', \'mambo2\', \'mambo\', \'mambo\', \'mambo\', \'2025-01-09\', \'Available\', \'2025-01-09 08:12:53\', \'2025-01-09 08:12:53\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH/Controllers/BooksController.php(45): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')
+CRITICAL - 2025-01-09 08:12:53 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn&quot;
+DETAIL:  Key (isbn)=(mambo) already exists.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 205.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;books_isbn&quot;
+DETAIL:  Key (isbn)=(mambo) already exists.', '/var/www/html/system/Database/Postgre/Connection.php', 205)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(205): pg_query(Object(PgSql\Connection), 'INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677f8505c9be0\', \'mambo2\', \'mambo\', \'mambo\', \'mambo\', \'2025-01-09\', \'Available\', \'2025-01-09 08:12:53\', \'2025-01-09 08:12:53\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677f8505c9be0\', \'mambo2\', \'mambo\', \'mambo\', \'mambo\', \'2025-01-09\', \'Available\', \'2025-01-09 08:12:53\', \'2025-01-09 08:12:53\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (\'677f8505c9be0\', \'mambo2\', \'mambo\', \'mambo\', \'mambo\', \'2025-01-09\', \'Available\', \'2025-01-09 08:12:53\', \'2025-01-09 08:12:53\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "books" ("id", "title", "author", "genre", "isbn", "published_date", "availability_status", "created_at", "updated_at") VALUES (:id:, :title:, :author:, :genre:, :isbn:, :published_date:, :availability_status:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH/Controllers/BooksController.php(45): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BooksController->create()
+11 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+12 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/var/www/html/public/index.php')

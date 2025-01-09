@@ -9,6 +9,12 @@ class BooksController extends ResourceController
     protected $modelName = 'App\Models\BookModel';
     protected $format    = 'json';
 
+    public function __construct()
+    {
+        // Make sure the route is protected by the auth filter
+        helper('auth');
+    }
+
     // List all books
     public function index()
     {
@@ -17,7 +23,6 @@ class BooksController extends ResourceController
         return view('index', $data);  // Pass books data to the view
     }
     
-
     // Create a new book
     public function create()
     {    

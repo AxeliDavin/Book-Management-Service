@@ -1,18 +1,21 @@
 <?php
+namespace Config;
 
-use CodeIgniter\Router\RouteCollection;
+use App\Controllers\AuthController;
+use App\Filters\AuthFilter;
 
-/**
- * @var RouteCollection $routes
- */
+$routes->get('/', 'AuthController::index');  // Show login page
+$routes->get('login', 'AuthController::index');  // Show login page
+$routes->post('login', 'AuthController::login'); // Handle login form submission
+$routes->post('/logout', 'AuthController::logout');
 
-// Create a new book
-// $routes->post('books/create', 'BooksController::create');
-$routes->match(['get', 'post'], 'books/update/(:any)', 'BooksController::update/$1'); // Update a book
-$routes->get('/', 'BooksController::index');
-$routes->get('books', 'BooksController::index'); // List all books
-$routes->post('books/create', 'BooksController::create');
-$routes->delete('books/delete/(:any)', 'BooksController::delete/$1'); // Use DELETE for deleting a book
-$routes->get('books/toggleAvailability/(:any)', 'BooksController::toggleAvailability/$1'); // Toggle availability
-$routes->get('books/show/(:any)', 'BooksController::show/$1');  // Show a specific book by ID
-$routes->get('books/show', 'BooksController::show');  // Show all books
+// Apply the AuthFilter to protected routes
+$routes->group('', ['filter' => 'auth'], function($routes) {
+    $routes->get('books', 'BooksController::index');
+    $routes->post('books/create', 'BooksController::create');
+    $routes->get('books/update/(:any)', 'BooksController::update/$1');
+    $routes->delete('books/delete/(:any)', 'BooksController::delete/$1');
+    $routes->get('books/toggleAvailability/(:any)', 'BooksController::toggleAvailability/$1'); // Toggle availability
+    $routes->get('books/show/(:any)', 'BooksController::show/$1');
+    $routes->get('books/show', 'BooksController::show');
+});

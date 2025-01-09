@@ -17,6 +17,22 @@
     <p style="color: green;"><?php echo session()->getFlashdata('success'); ?></p>
 <?php endif; ?>
 
+<?php if (!session()->get('auth_token')): ?>
+    <p>You need to log in to access this page.</p>
+    <a href="/login">Go to Login</a>
+<?php else: ?>
+    <!-- Logout Button -->
+    <form action="/logout" method="post" style="display:inline;">
+        <?= csrf_field() ?>
+        <button type="submit">Logout</button>
+    </form>
+
+    <!-- Display the books list -->
+    <table border="1">
+        <!-- your book listing code here -->
+    </table>
+<?php endif; ?>
+
 <!-- Table to display books -->
 <table border="1">
     <thead>
