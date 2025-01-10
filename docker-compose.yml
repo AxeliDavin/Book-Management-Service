@@ -1,5 +1,5 @@
 services:
-  php:
+  php_book:
     build:
       dockerfile: Dockerfile
     container_name: book_service
@@ -34,7 +34,7 @@ services:
         php spark serve --host 0.0.0.0 --port 8080
       "
       
-  db:
+  db_book:
     image: postgres:13
     container_name: book_db
     environment:
